@@ -1,12 +1,10 @@
-import Image from "next/image";
-import Maps from "./components/Maps/Maps";
+import React from 'react'
+import Maps from "../components/Maps/Maps";
 import Navbar from "@/app/components/Navbar/Navbar";
-import Search from "./components/Search/Search";
-import Avatar from "./components/Avatar/Avatar";
+import Search from "../components/Search/Search";
+import Avatar from "../components/Avatar/Avatar";
 import { BiTargetLock } from "react-icons/bi";
-export default function Home() {
-  
-
+function page() {
   return (
     <div>
       <Maps style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }} />
@@ -26,3 +24,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default page

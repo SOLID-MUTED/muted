@@ -1,10 +1,9 @@
-'use client'
-
+'use client';
 import React, { useEffect, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, Circle } from 'react-leaflet';
 
-const Maps: React.FC = () => {
+const Maps: React.FC<{ style: React.CSSProperties }> = ({ style }) => {
   const [center, setCenter] = useState<{ lat: number; lng: number }>({ lat: 51.505, lng: -0.09 });
   const [position, setPosition] = useState<{ lat: number; lng: number; accuracy: number } | null>(null);
 
@@ -34,7 +33,7 @@ const Maps: React.FC = () => {
     <MapContainer
       center={center}
       zoom={13}
-      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
+      style={style}  // Menggunakan properti style dengan huruf kecil
       zoomControl={false}
     >
       <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" maxZoom={19} />
