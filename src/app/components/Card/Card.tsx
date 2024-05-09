@@ -16,7 +16,7 @@ function Card() {
             ></textarea>
           </div>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary w-full">Buy Now</button>
+            <button className="btn btn-primary w-full">Report a Noise</button>
           </div>
         </div>
       </div>

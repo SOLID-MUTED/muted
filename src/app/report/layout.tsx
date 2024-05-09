@@ -1,4 +1,5 @@
 import Avatar from "../components/Avatar/Avatar";
+import Navbar from "../components/Navbar/Navbar";
 function reportLayout({
   children,
 }: Readonly<{
@@ -7,6 +8,7 @@ function reportLayout({
   return (
   
     <div className="">
+      {/* <Navbar /> */}
         {children}
     
     </div>
