@@ -27,7 +27,7 @@ function Page() {
       </div>
       <div className="w-[100%] min-h-[40%] p-4 rounded-b-lg">
         <div className="max-w-[100%]">
-          <Maps style={{ width: "100%", height: "100%", zIndex: -1 }} />
+          <Maps style={{ width: "100%", height: "100%", zIndex: -1, top: 0  }} />
         </div>
       </div>
       <div className="w-[100%] min-h-[50%] mt-4 bg-slate-300 p-4 flex flex-col justify-center space-y-4 bottom-0 rounded-t-md">
