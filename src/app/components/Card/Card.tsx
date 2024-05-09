@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"
 
 function Card() {
   return (
@@ -16,7 +17,7 @@ function Card() {
             ></textarea>
           </div>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary w-full">Report a Noise</button>
+            <Link href={'/report'}><button className="btn btn-primary w-full">Report a Noise</button></Link>
           </div>
         </div>
       </div>
